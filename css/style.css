@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');
+
+*{
+    margin: 0;padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: "Poppins",sans-serif;
+    transition: all .2s linear;
+}
+
+:root{
+    --main-clr-- : rgb(171, 35, 255);
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden;
+    padding-left: 5rem;
+    height: 3000px;
+}
+
+::-webkit-scrollbar{
+    width: .7rem;
+}
+
+::-webkit-scrollbar-track{
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--main-clr--);
+}
+
+header{
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+header .nav{
+    writing-mode: vertical-lr;
+    padding: 1.5rem;
+}
+
+header .nav a{
+    font-size: 2rem;
+    padding: 1.5rem 0;
+    color: #333;
+}
+
+header .nav a:hover{
+    color: var(--main-clr--);
+}
+
+.fa-bars{
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    font-size: 3rem;
+    padding: 1rem;
+    color: white;
+    border-radius: .5rem;
+    background-color: var(--main-clr--);
+    display: none;
+}
+
+
+/* Media Query Section */
+
+@media (max-width : 1300px) {
+    
+}
+
+
+
+@media (max-width : 991px) {
+    html{
+        font-size: 55%;
+    }
+
+    .fa-bars{
+        display: initial;
+    }
+
+    header{
+        width: 100%;
+        height: 100%;
+        left: -128rem;
+        top: 0;
+    }
+
+    .active{
+        left: 0;
+    }
+
+    header .nav{
+        writing-mode: horizontal-tb;
+    }
+
+    header .nav a{
+        display: block;
+        padding: 1rem;
+        font-size: 3rem;
+    }
+}
+
+
+@media (max-width : 768px) {
+    html{
+        font-size: 50%;
+    }
+}
