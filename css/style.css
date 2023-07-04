@@ -431,6 +431,7 @@ section .heading span{
     padding: .5rem 2rem;
     border-radius: .5rem;
     margin: 1rem 0;
+    text-transform: none;
 }
 
 #contact .box-container form input:focus,textarea:focus{
